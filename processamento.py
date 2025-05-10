@@ -10,3 +10,10 @@ def calcular_proporcao(material_tamanho, folha_tamanho):
     altura_final = altura_material * proporcao_final
 
     return round(proporcao_final, 2), round(largura_final, 2), round(altura_final, 2)
+
+
+def redimensionar_imagem(imagem, tamanho_destino_cm):
+    dpi = 96
+    largura_px = int(tamanho_destino_cm[0] / 2.54 * dpi)
+    altura_px = int(tamanho_destino_cm[1] / 2.54 * dpi)
+    return imagem.resize((largura_px, altura_px))
