@@ -1,10 +1,12 @@
-# processamento.py
+def calcular_proporcao(material_tamanho, folha_tamanho):
+    largura_material, altura_material = material_tamanho
+    largura_folha, altura_folha = folha_tamanho
 
-def calcular_tamanho(material, folha):
-    # A lógica de cálculo pode variar conforme o material e folha escolhidos
-    if material == "Caneca" and folha == "A4":
-        return "5x7 cm"
-    elif "Camiseta" in material and folha == "A4":
-        return "15x20 cm"
-    else:
-        return "Tamanho não calculado"
+    proporcao_largura = largura_folha / largura_material
+    proporcao_altura = altura_folha / altura_material
+    proporcao_final = min(proporcao_largura, proporcao_altura)
+
+    largura_final = largura_material * proporcao_final
+    altura_final = altura_material * proporcao_final
+
+    return round(proporcao_final, 2), round(largura_final, 2), round(altura_final, 2)

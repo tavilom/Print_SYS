@@ -1,20 +1,20 @@
-# config.py
-
 TAMANHOS_MATERIAIS = {
-    "Camiseta (Normal) PP": "Camiseta (Normal) PP",
-    "Camiseta (Normal) P": "Camiseta (Normal) P",
-    "Camiseta (Normal) M": "Camiseta (Normal) M",
-    "Camiseta (Normal) G": "Camiseta (Normal) G",
-    "Camiseta (Normal) GG": "Camiseta (Normal) GG",
-    "Camiseta (Normal) XG": "Camiseta (Normal) XG",
-    "Camiseta (Babylook) P": "Camiseta (Babylook) P",
-    "Camiseta (Babylook) M": "Camiseta (Babylook) M",
-    "Camiseta (Babylook) G": "Camiseta (Babylook) G",
-    "Camiseta (Babylook) GG": "Camiseta (Babylook) GG",
+    "Camiseta (Normal) PP": (20, 30),
+    "Camiseta (Normal) P": (22, 32),
+    "Camiseta (Normal) M": (24, 34),
+    "Camiseta (Normal) G": (26, 36),
+    "Camiseta (Normal) GG": (28, 38),
+    "Camiseta (Normal) XG": (30, 40),
+    "Camiseta (Babylook) P": (20, 30),
+    "Camiseta (Babylook) M": (22, 32),
+    "Camiseta (Babylook) G": (24, 34),
+    "Camiseta (Babylook) GG": (26, 36),
 }
 
 TAMANHOS_FOLHAS = {
-    "A4": "A4",
-    "A3": "A3",
-    "Carta": "Carta",
+    "A4": (21.0, 29.7),
+    "A3": (29.7, 42.0),
+    "A5": (14.8, 21.0),
+    "Carta": (21.6, 27.9),
+    "Ofício": (21.6, 33.0),
 }
